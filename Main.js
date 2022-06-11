@@ -1,50 +1,33 @@
-// if else
-
-let numeroIf = 10;
-
-if (numeroIf > 0) {
-  console.log(true);
-} else {
-  console.log(false);
+class Persona {
+  constructor(nombre, edad, telefono) {
+    this.edad = edad;
+    this.nombre = nombre;
+    this.telefono = telefono;
+  }
+  // edad
+  get edad() {
+    return "Tengo " + this._edad;
+  }
+  set edad(edad) {
+    this._edad = edad;
+  }
+  // nombre
+  get nombre() {
+    return "Mi nombre " + this._nombre;
+  }
+  set nombre(nombre) {
+    this._nombre = nombre;
+  }
+  // telefono
+  get telefono() {
+    return "Mi tel " + this._telefono;
+  }
+  set telefono(telefono) {
+    this._telefono = telefono;
+  }
 }
-// bucle while
-console.log("while");
+const alumno = new Persona("Antonio", 22, 642525245);
 
-let numeroWhile = 0;
-while (numeroWhile < 3) {
-  numeroWhile = numeroWhile + 1;
-  console.log(numeroWhile);
-}
-// bucle do while
-console.log("do while");
-
-do {
-  numeroWhile = numeroWhile + 1;
-  console.log(numeroWhile);
-} while (numeroWhile < 3);
-// for
-console.log("for");
-
-let numeroFor = 0;
-for (numeroFor; numeroFor <= 3; numeroFor++) {
-  console.log(numeroFor);
-}
-// switch
-let estacion = "verano";
-switch (key) {
-  case "verano":
-    console.log("es verano");
-    break;
-  case "otoño":
-    console.log("es otoño");
-    break;
-  case "invierno":
-    console.log("es otoño");
-    break;
-
-  default:
-    console.log("es otra estacion");
-
-    break;
-}
-console.log("termine");
+console.log(alumno.edad);
+console.log(alumno.nombre);
+console.log(alumno.telefono);
