@@ -4,21 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio de Introducción a HTML en OpenBootcamp</title>
+    <title>Ejercicio 02 - Formularios en HTML</title>
   </head>
   <body>
-    <!-- Este es mi primer comentario de dos líneas -->
-    <!-- Aprendiendo a documentar mi código con OpenBootcamp -->
-    <ol>
-      <li><a href="/">Youtube</a></li>
-      <li><a href="/">Youtube</a></li>
-      <li><a href="/">Youtube</a></li>
-    </ol>
-    <style>
-      body {
-        background-color: gray;
-      }
-    </style>
+    <form action="/">
+      <label for="text">nombre</label>
+      <input min="3" type="text" name="text" id="text" />
+      <label for="edad">edad</label>
+      <input min="3" type="number" step="5" name="edad" id="edad" />
+      <div>
+        <button type="submit">enviar</button>
+        <button>reset</button>
+      </div>
+      <div>
+        <textarea name="" id="" cols="37" rows="10"></textarea>
+      </div>
+    </form>
+    <h3>Tablas</h3>
+    <table>
+      <tr>
+        <th>Alumno</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>jueves</th>
+        <th>viernes</th>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>9-13</td>
+        <td>9-13</td>
+        <td>9-13</td>
+        <td>9-13</td>
+      </tr>
+      <tr>
+        <td>Tony</td>
+        <td>9-13</td>
+        <td>4-13</td>
+        <td>9-13</td>
+        <td>9-13</td>
+      </tr>
+    </table>
+    <!-- style & script -->
+    <link rel="stylesheet" href="style.css" />
     <script src="Main.js"></script>
   </body>
 </html>
