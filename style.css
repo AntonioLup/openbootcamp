@@ -4,12 +4,17 @@ body {
 textarea {
   resize: none;
 }
-img{
-    width: 100%;
-    max-width: 200px;
+img {
+  width: 100%;
+  max-width: 200px;
 }
-video{
-    width: 100%;
-    max-width: 500px;
-
+video {
+  width: 100%;
+  max-width: 500px;
+}
+.encabezado{
+    font-size: 2rem;
+}
+#elemento-1{
+    color: red;
 }
