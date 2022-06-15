@@ -4,3 +4,12 @@ body {
 textarea {
   resize: none;
 }
+img{
+    width: 100%;
+    max-width: 200px;
+}
+video{
+    width: 100%;
+    max-width: 500px;
+
+}
