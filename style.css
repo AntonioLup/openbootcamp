@@ -11,6 +11,25 @@ picture{
   gap: 15px;
   flex-wrap: wrap;
 }
+.container{
+  width: 500px;
+  height: 350px;
+  cursor: cell;
+  background-color: darkolivegreen;
+  margin: 0 auto;
+}
+.container::after{
+  content: "Pasa por encima";
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+
+}
+.container:hover::after{
+  content: "Hecho";
+  color: black;
+}
 img {
   width: 100%;
   max-width: 300px;
