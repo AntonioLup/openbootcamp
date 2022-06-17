@@ -4,9 +4,20 @@ body {
 textarea {
   resize: none;
 }
+picture{
+ 
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 img {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
+  transition:opacity 1s ;
+}
+img:hover {
+ opacity: 0.2;
 }
 video {
   width: 100%;
