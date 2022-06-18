@@ -1,61 +1,49 @@
+:root {
+  --bg-right: rgb(51, 128, 128);
+  --bg-left: rgb(91, 51, 128);
+}
+*{
+  box-sizing: border-box;
+}
 body {
-  background-color: #4b8888;
-  color: #fff ;
+  background-color: #3c3c3c;
+  color: #fff;
+  margin: 0;
 }
-textarea {
-  resize: none;
-}
-.container{
+.container {
   display: flex;
-  align-self: center;
-  justify-content: center;
-  min-height: 100vh;
-
 }
-.tooltip {
-  position: relative;
+.side {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(51, 128, 128);
+}
+.element {
+  width: 300px;
+  height: 75px;
+}
+.element-right {
+  background-color: var(--bg-left);
+  border-radius: 15px;
   display: flex;
   align-items: center;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 3px 3px;
-  padding: 10px 15px;
-  margin: auto;
-  transition: all 0.4s;
+  justify-content: center;
 }
-.tooltip span {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  background-color: cadetblue;
-  padding: 5px 15px;
-  border-radius: 5px;
-  top: -50px;
-  left: -10px;
- transition: opacity 1s;
-
+.side-right {
+  background-color: var(--bg-right);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: column;
 }
-.tooltip span::before {
-  content: "";
-  position: absolute;
-  opacity: 0;
-  border-radius: 100%;
-  bottom: -3px;
-  left: 45px;
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  transition: opacity 1.5s;
-
+.side-left {
+  background-color: var(--bg-left);
 }
-.tooltip:hover span, .tooltip:hover span::before {
- opacity: 1;
-  
-}
-.tooltip:hover {
-  cursor: pointer;
-  opacity: 0.6;
-  transform: translateY(-5px);
-  color: white;
-  background-color: rgba(210, 105, 30, 0.361);
+@media screen and (max-width: 640px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
