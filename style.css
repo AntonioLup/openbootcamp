@@ -2,7 +2,7 @@
   --bg-right: rgb(51, 128, 128);
   --bg-left: rgb(91, 51, 128);
 }
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -12,38 +12,17 @@ body {
 }
 .container {
   display: flex;
-}
-.side {
-  width: 500px;
-  height: 500px;
-  background-color: rgb(51, 128, 128);
-}
-.element {
-  width: 300px;
-  height: 75px;
-}
-.element-right {
-  background-color: var(--bg-left);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.side-right {
-  background-color: var(--bg-right);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
   flex-direction: column;
 }
-.side-left {
-  background-color: var(--bg-left);
+.col-sm {
+  background-color: aqua;
 }
-@media screen and (max-width: 640px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-  }
+.col-md {
+  background-color: rgb(140, 255, 0);
+}
+.col-lg {
+  background-color: rgb(255, 0, 144);
+}
+.col-xl {
+  background-color: rgb(8, 0, 255);
 }
