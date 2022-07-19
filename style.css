@@ -15,14 +15,14 @@ body {
   flex-direction: column;
 }
 .col-sm {
-  background-color: aqua;
+  background-color: rgba(0, 255, 255, 0.289);
 }
 .col-md {
-  background-color: rgb(140, 255, 0);
+  background-color: rgba(140, 255, 0, 0.253);
 }
 .col-lg {
-  background-color: rgb(255, 0, 144);
+  background-color: rgba(255, 0, 144, 0.373);
 }
 .col-xl {
-  background-color: rgb(8, 0, 255);
+  background-color: rgba(8, 0, 255, 0.303);
 }
